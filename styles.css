@@ -1,0 +1,101 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+:root {
+    --background-color: #f8f8f8;
+    --text-color: #0c0b0b;
+    --button-bg-color: #007aff;
+    --button-hover-bg-color: #005bb5;
+}
+
+[data-theme="dark"] {
+    --background-color: #000000;
+    --text-color: #f8f8f8;
+    --button-bg-color: #000000;
+    --button-hover-bg-color: #000000;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s;
+}
+
+[data-theme="dark"] .container {
+    background-color: #1a1919;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.theme-toggle button {
+    font-size: 1.5em;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--button-bg-color);
+    color: var(--text-color);
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.theme-toggle button:hover {
+    background-color: var(--button-hover-bg-color);
+}
+
+.time-display {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.controls input {
+    font-size: 1.2em;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.controls button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button-bg-color);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: var(--button-hover-bg-color);
+}
+
+.date-time {
+    font-size: 2em;
+}

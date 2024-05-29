@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro Apple Style</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cronômetro</h1>
+        <div class="theme-toggle">
+            <button id="themeToggle" onclick="toggleTheme()">🌙</button>
+        </div>
+        <div class="time-display">
+            <span id="timer">00:00:00</span>
+        </div>
+        <div class="controls">
+            <input type="text" id="inputTime" placeholder="hh:mm:ss">
+            <button onclick="startTimer()">Start</button>
+            <button onclick="stopTimer()">Stop</button>
+            <button onclick="resetTimer()">Reset</button>
+        </div>
+        <div class="date-time">
+            <h2 id="date"></h2>
+            <h2 id="time"></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
